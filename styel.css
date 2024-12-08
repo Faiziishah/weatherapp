@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:black;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+}
+.card{
+    width: 100%;
+    max-width: 570px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+}
+.weather_icon{
+    width: 170px;
+    margin-top: 30px;
+    box-shadow: #222;
+}
+.temprature {
+    font-size: 80px;
+    /* font-weight: 500; */
+}
+.input{
+    color: #00feba;
+    outline: none;
+
+}
+input:focus,
+input:hover {
+    box-shadow: 0 0 10px #00feba;
+    border-color: #00ffee;
+}
+
+.button {
+ width: 50px;
+    height: 50px;
+   
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+      background: linear-gradient(45deg, #043aff, #0051ff);
+    
+}
+
+.button:hover {
+    background-color: #0051ff;
+    transform: scale(1.1);
+    animation: pulse 1.5s infinite;
+}
+
+.srch_icon {
+    width: 24px;
+    height: 24px;
+}
+
+.button:hover .srch_icon {
+    filter: drop-shadow(0 0 5px #00ffee);
+}
+
+input::placeholder {
+    color: #0088ff;
+    transition: color 0.3s ease;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
